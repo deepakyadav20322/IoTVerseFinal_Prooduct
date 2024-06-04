@@ -11,7 +11,7 @@ import toast from "react-hot-toast"
 import LoadingSpinner from "@/components/custom/LoadingSpinner"
 import { formatDate } from "@/helper/helpFullUtilityMethods"
 import TableLoader from "@/components/custom/tableLoader"
-import ShowAllTeamMember from "@/components/custom/adminUI/ShowAllTeamMember"
+import ShowAllTeamMembers from '@/components/custom/adminUI/ShowAllTeamMembers'
 
 
 interface IUser {
@@ -193,7 +193,7 @@ export default function Component() {
         </div>
       
       {/* ======================----------- MEMBER DATA TABLE ----------------================ */}
-      <ShowAllTeamMember/>
+      <ShowAllTeamMembers/>
       </main>
     </div>
   )

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import ShowAllEventsData from "@/components/custom/adminUI/ShowAllEventsData"
+import ShowAllEventData from "@/components/custom/adminUI/ShowAllEventData"
 
 const page = () => {
   return (
@@ -9,7 +9,7 @@ const page = () => {
       <Button variant="outline" className=" cursor-not-allowed">Export to CSV</Button>
     </div>
     <div className="overflow-x-auto">
-      <ShowAllEventsData/>
+      <ShowAllEventData/>
     </div>
   </div>
   )
