@@ -1,5 +1,5 @@
 
-import AdminDashBoardNavigation from '@/components/custom/adminUI/AdminDashBoardNavigation'
+import AdminDashboardNavigations from '@/components/custom/adminUI/AdminDashboardNavigations'
 
 export default function DashboardLayout({
     children,
@@ -8,7 +8,8 @@ export default function DashboardLayout({
   }>) {
     return (
         <>
-        <AdminDashBoardNavigation/>
+        {/* <AdminDashBoardNavigation/> */}
+        <AdminDashboardNavigations/>
           {children}
         </>
        
