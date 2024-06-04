@@ -10,7 +10,7 @@ import { getEventStatus } from "@/helper/statusByDateAndTime";
 import axios from "axios";
 import { useEffect, useState } from "react";
   
-const page:React.FC = () => {
+const Event:React.FC = () => {
 
   const [loading,setLoading] = useState<boolean>(false);
   const [allEvents,setAllEvents] = useState<any[]>([]);
@@ -82,7 +82,7 @@ const page:React.FC = () => {
   )
 }
 
-export default page;
+export default Event;
 
 
 

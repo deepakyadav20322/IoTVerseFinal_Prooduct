@@ -7,7 +7,7 @@ const Vision = () => {
     <h1 className=' font-bold text-2xl text-center py-4'>Our Vision</h1>
     <div className=' flex justify-evenly items-center gapx-x-4 mt-4 px-2 flex-col md:flex-row'>
         <div className=''>
-        <Image src={'/Images/visionImg.png'} width={400} height={500} className=' rounded-xl max-w-md'/>
+        <Image alt='vision Img' src={'/Images/visionImg.png'} width={400} height={500} className=' rounded-xl max-w-md'/>
         </div>
         <div className='flex flex-col justify-start items-start max-w-xl w-full px-2 sm:ml-8 gap-y-6 pb-8 '>
           <h1 className='text-3xl font-semibold text-[#020856e1]'>Inspiring Collaborative Exploration, and IoT Innovation</h1>

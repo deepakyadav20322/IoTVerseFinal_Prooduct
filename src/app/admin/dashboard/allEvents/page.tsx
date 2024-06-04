@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import ShowAllEventData from "@/components/custom/adminUI/ShowAllEventData"
 
-const page = () => {
+const AllEvents = () => {
   return (
     <div className="flex flex-col gap-4 max-w-7xl w-full m-auto my-4">
     <div className="flex justify-between items-center">
@@ -15,4 +15,4 @@ const page = () => {
   )
 }
 
-export default page
+export default AllEvents

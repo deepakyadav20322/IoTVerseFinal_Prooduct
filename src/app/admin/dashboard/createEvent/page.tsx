@@ -12,7 +12,7 @@ import toast from 'react-hot-toast'
 import axios from 'axios'
 import { useRouter } from 'next/navigation'
 
-const Event = () => {
+const CreateEvent = () => {
 
 const [eventData,setEventData]=useState<IEvent>({name:'',slogan:'',description:'',startDate:'',endDate:'',startTime:'',endTime:''});
 const [loading,setLoading]=useState<boolean>(false);
@@ -110,4 +110,4 @@ const router = useRouter()
   )
 }
 
-export default Event
+export default CreateEvent
