@@ -1,24 +1,24 @@
 
     "use client"
-import React, { useState } from 'react'
+import  { useState } from 'react'
+import toast from 'react-hot-toast';
 
 const NewsLaterForm = () => {
     const [formData, setFormData] = useState({ newsEmail:"" });
-  const handelChange = (e)=>{
-    const {name,value} = e.target ;
-    setFormData((prv)=>({
-        ...prv,
-        [name]: value,
-    }))
-
-
-    }
-  const handelSubmit = (e)=>{
+  const handelChange = (e:React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prv) => ({
+      ...prv,
+      [name]: value,
+    }));
+  };
+  const handelSubmit = (e:React.FormEvent<HTMLFormElement>)=>{
    e.preventDefault();
    if(!formData.newsEmail){
     alert('Email is required');
     return;
    }
+   toast.success('Subscribed successfully');
    console.log(formData);
   }
 
