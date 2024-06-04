@@ -11,7 +11,7 @@ interface NextAuthSessionProviderProps{
   children
 } : NextAuthSessionProviderProps) {
   return (
-    <SessionProvider>
+    <SessionProvider basePath='https://iot-verse-final-prooduct.vercel.app/api/auth/'>
       {children}
     </SessionProvider>
   )
