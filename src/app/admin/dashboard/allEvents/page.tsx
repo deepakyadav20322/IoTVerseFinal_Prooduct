@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import ShowAllEventsData from '@/components/custom/adminUI/showAllEventsData'
+import ShowAllEventsData from "@/components/custom/adminUI/ShowAllEventsData"
 
 const page = () => {
   return (

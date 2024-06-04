@@ -1,8 +1,8 @@
   'use client'
 
 import Link from "next/link";
-import { useRouter,usePathname } from "next/navigation";
-const adminDashBoardNavigation = ()=>{
+import {usePathname } from "next/navigation";
+const AdminDashBoardNavigation = ()=>{
   let pathName = usePathname();
 
   const dashboardNavigationItems = [
@@ -96,4 +96,4 @@ function MountainIcon(props:any) {
 
 
 
-  export default adminDashBoardNavigation;
+  export default AdminDashBoardNavigation;

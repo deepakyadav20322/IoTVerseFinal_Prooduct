@@ -1,5 +1,5 @@
 
-import AdminDashBoardNavigation from '@/components/custom/adminUI/adminDashBoardNavigation'
+import AdminDashBoardNavigation from '@/components/custom/adminUI/AdminDashBoardNavigation'
 
 export default function DashboardLayout({
     children,

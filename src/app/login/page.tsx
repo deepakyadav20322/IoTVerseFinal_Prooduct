@@ -1,15 +1,15 @@
    
    'use client'
-         import React from 'react'
          import { useRouter } from 'next/navigation';
          import { signIn } from 'next-auth/react';
          import { useSession } from 'next-auth/react';
+         import { useState } from 'react';
           
           const page = () => {
    
            const { data: session, status } = useSession();
             const router = useRouter(); 
-            const [data, setData] = React.useState({
+            const [data, setData] = useState({
               email: '',
               password: '',
             });

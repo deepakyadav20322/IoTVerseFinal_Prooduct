@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { IEvent } from '@/types/type_Interface'
