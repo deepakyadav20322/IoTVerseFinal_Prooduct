@@ -88,7 +88,7 @@ export default Event;
 
 
 // it is an event loader skelton component-----------------------
-export const EventLoader: React.FC = (props: any) => {
+ const EventLoader: React.FC = (props: any) => {
     return(
       <div className="grid gap-6 md:grid-cols-2 ">
             {Array.from({length:6}).map((x,ind)=>(
