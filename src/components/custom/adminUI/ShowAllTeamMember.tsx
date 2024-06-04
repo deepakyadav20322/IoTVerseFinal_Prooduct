@@ -14,7 +14,7 @@ import TableLoader from '../tableLoader'
 
 
 
-const ShowAllMember = () => {
+const ShowAllTeamMember = () => {
 
   const [memberData,setmemberData]=useState([]);
   const [loading ,setLoading]=useState<boolean>(false);
@@ -126,4 +126,4 @@ const ShowAllMember = () => {
   )
 }
 
-export default ShowAllMember
+export default ShowAllTeamMember

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { getEventStatus } from "@/helper/statusByDateAndTime";
 
-const showAllEventsData = () => {
+const ShowAllEventsData = () => {
   const [allEventData, setAllEventData] = useState<IEvent[]>([]);
   const [loading, setLoading] = useState(false);
   const [deleteLoading, setDeleteLoading] = useState<boolean>(false);
@@ -161,4 +161,4 @@ const showAllEventsData = () => {
   );
 };
 
-export default showAllEventsData;
+export default ShowAllEventsData;
