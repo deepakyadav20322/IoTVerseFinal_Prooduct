@@ -26,7 +26,7 @@ import { useRouter } from "next/navigation";
 
 
 
-const page = () => {
+const CreateMember = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [profileImg, setProfileImg] = useState<File | null>(null);
   const router = useRouter();
@@ -271,4 +271,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CreateMember;

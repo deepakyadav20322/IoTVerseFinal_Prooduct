@@ -18,7 +18,7 @@ interface IParams{
     id:string
 }
 
-const page:React.FC<{params:IParams}> = ({params}) => {
+const UpdateEvent:React.FC<{params:IParams}> = ({params}) => {
 
 const [eventData,setEventData]=useState<IEvent>({name:'',slogan:'',description:'',startDate:'',endDate:'',startTime:'',endTime:''});
 const [loading,setLoading]=useState<boolean>(false);
@@ -163,4 +163,4 @@ const router = useRouter();
   )
 }
 
-export default page
+export default UpdateEvent

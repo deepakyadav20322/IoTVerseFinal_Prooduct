@@ -5,7 +5,7 @@
          import { useSession } from 'next-auth/react';
          import { useState } from 'react';
           
-          const page = () => {
+          const Login = () => {
    
            const { data: session, status } = useSession();
             const router = useRouter(); 
@@ -55,4 +55,4 @@
             )
           }
           
-          export default page;
+          export default Login;

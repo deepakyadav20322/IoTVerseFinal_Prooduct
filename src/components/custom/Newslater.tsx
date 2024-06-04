@@ -1,5 +1,6 @@
 import React from 'react'
 import NewsLaterForm from './NewsLaterForm';
+import Image from 'next/image';
 
 const Newslater = () => {
   return (
@@ -10,8 +11,8 @@ const Newslater = () => {
             <p className='py-6'>Keep your life fresh! Receive updates about releases, new features and new events.</p>
             <NewsLaterForm/>
             </div>
-            <img src="/Images/designOne.svg" className='absolute top-[7.5rem] -left-[9rem] rotate-45' alt="svg" />
-            <img src="/Images/designOne.svg" className='absolute  -top-[6rem] -right-[9rem] rotate-[220deg]' alt="svg" />
+            <Image src="/Images/designOne.svg" className='absolute top-[7.5rem] -left-[9rem] rotate-45' alt="svg" />
+            <Image src="/Images/designOne.svg" className='absolute  -top-[6rem] -right-[9rem] rotate-[220deg]' alt="svg" />
      </div>
     </section>
   )

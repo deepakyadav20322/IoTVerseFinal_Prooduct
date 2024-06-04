@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Local = () => {
   const { data: session, status } = useSession();
   const router = useRouter();
 
@@ -29,4 +29,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Local;

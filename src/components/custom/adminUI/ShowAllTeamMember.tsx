@@ -96,7 +96,7 @@ const ShowAllTeamMember = () => {
               <TableBody>
                 
                   {memberData && memberData.map((member:any,index:number)=>(
-                    <TableRow>
+                    <TableRow key={index}>
                          <TableCell>
                          <div className="flex items-center gap-2">
                            <Avatar>
