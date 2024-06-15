@@ -1,6 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## how to run project on local
+1. Add .env file by taking reference from env.local and setup all the defined varibales
+2. Login URL=> http://localhost:3000/login
+3. for signup URL=> http://localhost:3000/signup
+4.  run project by => npm run dev
 ## Getting Started
+
+
+
 
 First, run the development server:
 

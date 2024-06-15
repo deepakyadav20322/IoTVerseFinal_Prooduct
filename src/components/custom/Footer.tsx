@@ -17,6 +17,8 @@ const Footer = () => {
               <a href="" className="flex items-center">
                 <Image
                   src="https://flowbite.com/docs/images/logo.svg"
+                  width={32}
+                  height={32}
                   className="h-8 me-3"
                   alt="Logo"
                 />

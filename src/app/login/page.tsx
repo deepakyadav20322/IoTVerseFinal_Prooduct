@@ -7,6 +7,7 @@
           
           const Login = () => {
    
+          const [loading, setLoading] = useState(false);
            const { data: session, status } = useSession();
             const router = useRouter(); 
             const [data, setData] = useState({
@@ -25,15 +26,19 @@
             const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
               e.preventDefault()
               console.log("data=> ",data)
+              if(!data.email || !data.password) return alert("All fields are required");
+                setLoading(true);
               const login = await signIn("credentials",{...data, redirect: false,},);
               if(login?.ok){
                 router.push('/admin/dashboard',);
+                setLoading(false);
               }else{
                 console.log("login error-> ",login?.error);
+                setLoading(false);
               }
-              console.log("login data=> ",login);
+             setLoading(false);
             }
-
+ 
         
               if(session && status === 'authenticated'){
                    router.push('/admin/dashboard');
@@ -46,7 +51,7 @@
                     <form onSubmit={handleSubmit} action="">
                       <input name='email' onChange={handleOnchange} type='email' placeholder='email' className='w-full p-2 border border-gray-300 rounded-md mb-2' />
                       <input name='password' onChange={handleOnchange} type='password' placeholder='password' className='w-full p-2 border border-gray-300 rounded-md mb-2' />
-                      <button type='submit' className='w-full px-3 py-2 bg-blue-500 text-white rounded-md'>Login</button>
+                      <button disabled={loading} type='submit' className='w-full px-3 py-2 disabled:bg-blue-300 disabled:text-gray-400 disabled:cursor-not-allowed bg-blue-500 text-white rounded-md'>{loading?'processing...':'login'}</button>
                       </form>
                   </div>
                   <div>
